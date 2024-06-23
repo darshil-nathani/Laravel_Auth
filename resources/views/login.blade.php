@@ -25,11 +25,17 @@
                                     <span>{{$message}}</span>
                                 @enderror
                             </div>
+                            @if(session('message'))
+                            <div class="text-danger">
+                                {{session('message')}}
+                            </div>
+                            @endif
                             <button type="submit" class="btn btn-primary btn-block mt-3">Login</button>
                             <a href="{{route('home')}}" class="btn btn-primary btn-block mt-3 mx-1">Back</a>
                         </form>
-                        <div class="text-center mt-3">
-                            <a href="{{route('register')}}" class="btn btn-link">Don't have an account? Sign Up </a>
+                        <hr>
+                        <div class="text-center">
+                            <p>Don't have an account?<a href="{{route('register')}}" class="btn btn-link"> Sign Up </a></p>
                         </div>
                     </div>
                 </div>

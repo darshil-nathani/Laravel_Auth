@@ -39,8 +39,9 @@
                             <button type="submit" class="btn btn-primary btn-block mt-3">Register</button>
                             <a href="{{route('home')}}" class="btn btn-primary btn-block mt-3 mx-1">Back</a>
                         </form>
-                        <div class="text-center mt-3">
-                            <a href="{{route('login')}}" class="btn btn-link">Alrady have an account? Login</a>
+                        <hr>
+                        <div class="text-center">
+                            <p>Alrady have an account?<a href="{{route('login')}}" class="btn btn-link">Sign in</a></p>
                         </div>
                     </div>
                 </div>
